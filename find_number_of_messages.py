@@ -1,5 +1,6 @@
 import json
-from re import S
+
+from numpy import s_
 from read_data import read_data
 
 def find_number_of_messages(data: dict)->int:
@@ -13,6 +14,7 @@ def find_number_of_messages(data: dict)->int:
     
     """
     s = 0
-    for i in data['message']:
+    for i in len(data['message']):
         s+=1
     return s
+print(find_number_of_messages('result.json'))
