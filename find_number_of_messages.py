@@ -1,3 +1,5 @@
+import json
+from re import S
 from read_data import read_data
 
 def find_number_of_messages(data: dict)->int:
@@ -10,4 +12,7 @@ def find_number_of_messages(data: dict)->int:
         int: Total number of messages.
     
     """
-    return
+    s = 0
+    for i in data['message']:
+        s+=1
+    return s
