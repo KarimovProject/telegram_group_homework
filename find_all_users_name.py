@@ -19,4 +19,5 @@ def find_all_users_name(data: dict)->list:
             if k not in arr1 :
                 arr1.append(k) 
     return arr1
+    
 print(find_all_users_name(read_data("data/result.json")))
