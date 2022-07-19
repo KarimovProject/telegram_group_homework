@@ -18,6 +18,6 @@ def find_all_users_name(data: dict)->list:
         from_usr = i.get('from')
         if from_usr and from_usr not in from_usr:
             arr1.append(from_usr)
-    return arr
+    return list(set(arr+arr1))
 path = 'data/result.json'
 data = read_data(path)
